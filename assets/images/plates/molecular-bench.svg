@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+<title id="title">调香实验室工作台装饰图</title>
+<desc id="desc">自绘的烧瓶、量筒、分子环、笔记本与闻香纸线稿。抽象结构仅作装饰，不是某个具体分子的精确结构式。</desc>
+<defs>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#D8D0C1" stroke-width=".6" opacity=".5"/></pattern>
+ <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#8A877E" stroke-width=".5" opacity=".35"/></pattern>
+</defs>
+<rect width="760" height="540" fill="#F5F1E8"/>
+<rect x="14" y="14" width="732" height="512" fill="url(#grid)" stroke="#26251F" stroke-width="1"/>
+<rect x="26" y="26" width="708" height="488" fill="none" stroke="#D8D0C1"/>
+<g stroke="#26251F" stroke-width="1" fill="none"><path d="M50 52h38M50 52v38M710 488h-38M710 488v-38"/></g>
+<text x="54" y="48" font-family="Georgia,serif" font-size="8" fill="#60684A" letter-spacing="2">SIMON WORKSHOP / LABORATORY PLATE 02</text>
+<text x="706" y="48" text-anchor="end" font-family="ui-monospace,monospace" font-size="7" fill="#8A877E">MOLECULAR BENCH · DECORATIVE</text>
+<path d="M74 428h612" stroke="#26251F" stroke-width="1.4"/>
+<g transform="translate(139 213)" stroke="#354B3C" fill="none" stroke-width="1.4">
+ <path d="M38 0v70l-48 96c-14 28 4 61 36 61h112c32 0 50-33 36-61L126 70V0"/>
+ <path d="M22 0h120M4 168h156" stroke-width="1"/>
+ <path d="M6 173c38 22 138 22 177 0" stroke="#94745A" stroke-width="1.2"/>
+ <path d="M-4 204c45 18 150 18 196 0" stroke="#B58A54" stroke-width=".9" opacity=".7"/>
+ <path d="M52 120c16-12 35-10 52 2s37 14 54 1" stroke="#60684A" stroke-width="1"/>
+</g>
+<g transform="translate(350 247)" stroke="#26251F" fill="none" stroke-width="1.2">
+ <path d="M0 0v91l35 82h78l35-82V0M-12 173h174"/>
+ <path d="M26 187h124M34 208h108M46 231h84" stroke-width=".8" opacity=".65"/>
+ <path d="M2 104c38 18 106 18 144 0" stroke="#B58A54"/>
+ <g stroke="#354B3C" fill="none">
+  <path d="M22 133c20-16 43-4 54 9 13 15 31 11 44 1" stroke-width="1"/>
+  <circle cx="33" cy="126" r="3"/><circle cx="98" cy="148" r="2"/>
+ </g>
+</g>
+<g transform="translate(548 293)" stroke="#26251F" fill="none">
+ <path d="M0 0h156v132H0Z" stroke-width="1.1"/>
+ <path d="M16 18h124M16 32h96M16 46h112M16 78h78M16 92h88" stroke="#8A877E" stroke-width=".7"/>
+ <path d="M16 60h54" stroke="#B58A54" stroke-width="2"/>
+ <path d="M78 108l38-28 26 38-36 27Z" stroke="#354B3C" stroke-width="1.1"/>
+ <text x="16" y="124" font-family="ui-monospace,monospace" font-size="6" fill="#8A877E" letter-spacing="1">FORMULA / 分子式</text>
+</g>
+<g transform="translate(620 172)" stroke="#94745A" fill="none" stroke-width="1.1">
+ <path d="M0-42 39-19v46L0 50-39 27v-46Z"/>
+ <path d="M0-42v46M39-19 0 4M-39-19 0 4M0 4v46" opacity=".6"/>
+ <circle cx="0" cy="4" r="5" fill="#B58A54" stroke="none"/>
+ <path d="M39 27h37" stroke-dasharray="2 4"/><text x="82" y="30" font-family="ui-monospace,monospace" font-size="6" fill="#8A877E" stroke="none">RING</text>
+</g>
+<g transform="translate(598 414)" stroke="#60684A" fill="none" stroke-width="1">
+ <path d="M0 0h97l12 55H-12Z"/><path d="M-12 55h121" stroke-width="1.3"/>
+ <path d="M15 14v26M34 14v26M53 14v26M72 14v26" opacity=".5"/>
+</g>
+<g transform="translate(89 414)" stroke="#B58A54" fill="none" stroke-width="1">
+ <path d="M0 0h55l17 15L55 30H0Z"/><path d="M55 0l18 15-18 15M0 8h55M0 16h55M0 24h55" opacity=".6"/>
+</g>
+<g font-family="ui-monospace,monospace" font-size="6.5" fill="#8A877E" letter-spacing="1">
+ <text x="80" y="100">1 · ISOLATE</text><text x="342" y="115">2 · MEASURE</text><text x="548" y="270">3 · RECORD</text><text x="604" y="115">4 · DESCRIBE</text>
+</g>
+<g stroke="#26251F" stroke-width=".7" fill="none" opacity=".75">
+ <path d="M115 107h27l20 40"/><path d="M374 121v23l26 22"/><path d="M580 276v-38l23-25"/><path d="M648 121v15l-9 14"/>
+ <circle cx="115" cy="107" r="2"/><circle cx="374" cy="121" r="2"/><circle cx="580" cy="276" r="2"/><circle cx="648" cy="121" r="2"/>
+</g>
+<text x="54" y="498" font-family="Georgia,serif" font-size="9" fill="#26251F" letter-spacing="2">ISOLATE · MEASURE · RECORD · DESCRIBE</text>
+<text x="706" y="498" text-anchor="end" font-family="ui-monospace,monospace" font-size="6.5" fill="#8A877E">ABSTRACT STRUCTURES — NOT A SPECIFIC MOLECULE</text>
+<rect x="30" y="30" width="700" height="480" fill="url(#hatch)" opacity=".12" pointer-events="none"/>
+</svg>

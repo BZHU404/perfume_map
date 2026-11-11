@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+<title id="title">香水档案瓶型装饰图</title>
+<desc id="desc">自绘的通用香水瓶轮廓、档案标签与抽屉线稿。瓶型不指向任何真实品牌或产品，档案编号为装饰性虚构编号。</desc>
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#D8D0C1" stroke-width=".6" opacity=".5"/></pattern><pattern id="h" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line x1="0" y1="0" x2="0" y2="7" stroke="#8A877E" stroke-width=".5" opacity=".35"/></pattern></defs>
+<rect width="760" height="540" fill="#F5F1E8"/><rect x="14" y="14" width="732" height="512" fill="url(#g)" stroke="#26251F"/>
+<rect x="26" y="26" width="708" height="488" fill="none" stroke="#D8D0C1"/>
+<g stroke="#26251F" fill="none" stroke-width="1"><path d="M50 52h38M50 52v38M710 488h-38M710 488v-38"/></g>
+<text x="54" y="48" font-family="Georgia,serif" font-size="8" fill="#60684A" letter-spacing="2">SIMON WORKSHOP / ARCHIVE PLATE 04</text>
+<text x="706" y="48" text-anchor="end" font-family="ui-monospace,monospace" font-size="7" fill="#8A877E">GENERIC BOTTLE FORMS · NOT PRODUCTS</text>
+<g transform="translate(72 118)" stroke="#26251F" fill="none">
+ <g transform="translate(0 0)">
+  <path d="M38 0h80v38l26 22v172H12V60l26-22Z" stroke-width="1.2" fill="#FBF8F1"/>
+  <path d="M38 0h80v26H38Z"/><path d="M40 88h76v80H40Z" stroke="#D8D0C1"/>
+  <text x="48" y="116" font-family="Georgia,serif" font-size="8" fill="#60684A" stroke="none">A / 01</text>
+  <text x="48" y="130" font-family="ui-monospace,monospace" font-size="5" fill="#8A877E" stroke="none">FLORAL</text>
+  <text x="48" y="146" font-family="ui-monospace,monospace" font-size="5" fill="#8A877E" stroke="none">ARCHIVE</text>
+  <path d="M40 88h76M40 168h76" stroke="#8A877E" stroke-width=".7"/>
+ </g>
+ <g transform="translate(174 28)">
+  <path d="M34 0h66v30H34Z"/><path d="M18 30h98v192H18Z" stroke-width="1.1" fill="#FBF8F1"/>
+  <path d="M30 64h74v94H30Z" stroke="#D8D0C1"/><text x="38" y="92" font-family="Georgia,serif" font-size="8" fill="#60684A" stroke="none">B / 02</text>
+  <text x="38" y="107" font-family="ui-monospace,monospace" font-size="5" fill="#8A877E" stroke="none">AMBER</text><path d="M30 64h74M30 158h74" stroke="#8A877E" stroke-width=".7"/>
+ </g>
+ <g transform="translate(360 48)">
+  <path d="M25 0h72v24H25Z"/><path d="M8 24h106v178H8Z" stroke-width="1.2" fill="#FBF8F1"/>
+  <path d="M30 54h62v110H30Z" stroke="#D8D0C1"/><text x="38" y="81" font-family="Georgia,serif" font-size="8" fill="#60684A" stroke="none">C / 03</text>
+  <text x="38" y="96" font-family="ui-monospace,monospace" font-size="5" fill="#8A877E" stroke="none">WOODY</text><path d="M30 54h62M30 164h62" stroke="#8A877E" stroke-width=".7"/>
+ </g>
+</g>
+<g transform="translate(92 416)" stroke="#94745A" fill="none">
+ <path d="M0 0h500v38H0Z" stroke-width="1.1"/><path d="M28 0v38M500 0v38" stroke="#26251F"/><path d="M132 14h140M132 26h92" stroke="#26251F" stroke-width=".7"/>
+ <text x="298" y="24" font-family="ui-monospace,monospace" font-size="6" fill="#8A877E" stroke="none" letter-spacing="1">DRAWER / FIELD NOTES / NOT FOR SALE</text>
+</g>
+<g transform="translate(566 128)" stroke="#354B3C" fill="none">
+ <path d="M0 0h124v188H0Z" stroke-width="1"/><path d="M12 14h100M12 28h66M12 44h82M12 58h74" stroke="#8A877E" stroke-width=".7"/>
+ <path d="M12 78h100M12 92h100M12 106h100M12 120h100" stroke="#D8D0C1" stroke-width=".7"/>
+ <text x="12" y="174" font-family="ui-monospace,monospace" font-size="5.5" fill="#8A877E" stroke="none">PUBLIC NOTES</text>
+ <path d="M104 78l12 12M104 92l12 12M104 106l12 12M104 120l12 12" stroke="#B58A54" stroke-width="1"/>
+</g>
+<text x="54" y="498" font-family="Georgia,serif" font-size="9" fill="#26251F" letter-spacing="2">FORM · LABEL · YEAR · MEMORY</text>
+<text x="706" y="498" text-anchor="end" font-family="ui-monospace,monospace" font-size="6.5" fill="#8A877E">DECORATIVE SILHOUETTES — NOT REAL PACKAGING</text>
+<rect x="30" y="30" width="700" height="480" fill="url(#h)" opacity=".12" pointer-events="none"/>
+</svg>

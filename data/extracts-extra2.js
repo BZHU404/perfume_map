@@ -1,0 +1,38 @@
+/* 香谱 · 天然提取物增补 2 */
+(function () {
+  const S = window.SCENT;
+  const G = (name) => S.refs.goodscents(name);
+  const MS = (name) => S.refs.custom("materialSafety", { name: "工艺/安全资料 · " + name, note: "工艺、溶剂、得率与法规状态须按具体商品核对。" });
+  const A = (summary) => ({ grade: "B", summary });
+  function E(o) {
+    return Object.assign({
+      physicalForm: "依提取/加工方式而异；未录入统一形态。",
+      yield: "未录入统一数值；随原料、产地、加工与设备变化。",
+      chemicalProfile: [], applications: ["调香"],
+      safety: "作为复杂提取物使用；不可口服，不可直接用于皮肤；具体法规与过敏原按商品规格核对。",
+      specialty: false,
+      audit: A("提取物类型与原料对应关系明确；具体得率/组成随批次与商品变化。"),
+      references: [S.refs.iso(), G(o.nameEn), MS(o.nameEn)],
+    }, o);
+  }
+  S.extracts.push(
+    E({ id: "ex-geranium-bourbon-oil", materialId: "geranium", nameZh: "波旁天竺葵精油", nameEn: "Bourbon Geranium Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "叶片/嫩枝水蒸气蒸馏；留尼汪/波旁产地传统。", aromaProfile: ["玫瑰", "绿叶", "薄荷", "果香"], chemicalProfile: ["香叶醇", "香茅醇", "芳樟醇", "异薄荷酮"], applications: ["玫瑰/绿叶", "花香中调", "皂感"], safety: "含香叶醇/香茅醇等潜在过敏原；不可口服。", notes: "波旁天竺葵与埃及/中国天竺葵的化学型/香气不同；商品名需注明产地。" }),
+    E({ id: "ex-roman-chamomile-oil", materialId: "roman-chamomile", nameZh: "罗马洋甘菊精油", nameEn: "Roman Chamomile Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "花头水蒸气蒸馏。", aromaProfile: ["苹果", "菊花", "蜂蜜", "草本"], chemicalProfile: ["乙酸橙花酯", "α-蒎烯", "金合欢醇", "当归酸酯"], applications: ["草本花香", "苹果/茶感", "洗护"], safety: "菊科过敏者可能敏感；精油可能致敏/刺激，不可口服。", notes: "罗马洋甘菊（Chamaemelum nobile）不是德国洋甘菊（Matricaria chamomilla）。" }),
+    E({ id: "ex-australian-sandalwood-oil", materialId: "australian-sandalwood", nameZh: "澳大利亚檀香精油", nameEn: "Australian Sandalwood Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "心材/根水蒸气蒸馏；需合法采伐许可。", aromaProfile: ["干燥檀香", "木质", "树脂", "微烟"], chemicalProfile: ["α-檀香醇", "β-檀香醇", "檀香烯"], applications: ["檀香/木质", "后调", "天然檀香替代"], safety: "檀香醇类可能致敏；来源合法/可持续性必须核实。", notes: "Santalum spicatum ≠ Santalum album；不可只按‘檀香’合并。" }),
+    E({ id: "ex-virginia-cedar-oil", materialId: "virginia-cedar", nameZh: "弗吉尼亚雪松精油", nameEn: "Virginia Cedarwood Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "木材/木屑水蒸气蒸馏。", aromaProfile: ["铅笔屑", "干燥木质", "树脂", "微甜"], chemicalProfile: ["α-雪松烯", "β-雪松烯", "雪松醇", "长叶烯"], applications: ["木质/铅笔屑", "男香", "后调"], safety: "精油可能致敏/刺激；不可口服。", notes: "Juniperus virginiana 不是 Cedrus atlantica；两者商品名都叫‘雪松’。" }),
+    E({ id: "ex-spikenard-oil", materialId: "spikenard", nameZh: "甘松精油", nameEn: "Spikenard Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "根茎水蒸气蒸馏；需核实野生/栽培来源。", aromaProfile: ["泥土", "木质", "药感", "微甜", "动物"], chemicalProfile: ["缬草烯类", "甘松酮", "倍半萜类"], applications: ["根茎/药感", "焚香", "木质后调"], safety: "可能致敏/刺激；不可口服；孕期/儿童避免自行使用。", notes: "保护状态/贸易需查 CITES 与国家法规；不可把‘天然’当可持续。" }),
+    E({ id: "ex-angelica-root-oil", materialId: "angelica-root", nameZh: "欧白芷根精油", nameEn: "Angelica Root Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "根水蒸气蒸馏。", aromaProfile: ["泥土", "麝香", "草本", "柑橘", "木质"], chemicalProfile: ["α-蒎烯", "β-水芹烯", "十五内酯", "香豆素类"], applications: ["根茎/麝香", "木质", "酒香"], safety: "含呋喃香豆素/光敏风险；不可口服，避免日晒后皮肤接触。", notes: "Angelica archangelica（欧白芷）≠ Angelica sinensis（当归）。" }),
+    E({ id: "ex-turmeric-co2", materialId: "turmeric", nameZh: "姜黄 CO₂ 提取物", nameEn: "Turmeric CO₂ Extract", extractType: "CO₂ 萃取", extractionMethod: "姜黄根茎超临界 CO₂ 萃取。", aromaProfile: ["泥土", "辛香", "橙黄", "木质", "微苦"], chemicalProfile: ["姜黄酮", "芳姜黄酮", "姜烯", "姜黄素类"], applications: ["姜黄/泥土", "东方调", "美食/木质"], safety: "可能刺激/致敏；姜黄素高剂量有肝毒性报道。不可口服精油。", notes: "CO₂ 提取物可能同时含挥发油与姜黄素，规格需说明。" }),
+    E({ id: "ex-yuzu-oil", materialId: "yuzu", nameZh: "柚子精油", nameEn: "Yuzu Oil", extractType: "精油（冷压/蒸馏）", extractionMethod: "果皮冷压或水蒸气蒸馏；去呋喃香豆素规格需注明。", aromaProfile: ["柚子", "柑橘", "花香", "青绿", "微苦"], chemicalProfile: ["柠檬烯", "γ-萜品烯", "芳樟醇", "柑橘醛类"], applications: ["柑橘前调", "清新/花香", "日系香水"], safety: "冷压果皮油含呋喃香豆素，光敏风险；不可口服。", notes: "Citrus junos；与 pomelo/葡萄柚不同。" }),
+    E({ id: "ex-kaffir-lime-leaf-oil", materialId: "kaffir-lime-leaf", nameZh: "卡菲尔青柠叶精油", nameEn: "Kaffir Lime Leaf Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "叶片水蒸气蒸馏。", aromaProfile: ["青柠叶", "青绿", "花香", "辛香", "微苦"], chemicalProfile: ["香茅醛", "芳樟醇", "柠檬烯", "β-蒎烯"], applications: ["东南亚料理", "青绿柑橘", "花香"], safety: "可能致敏/光敏；不可口服。", notes: "叶与果实/果皮不同；商品名有争议，正式资料常用 makrut lime。" }),
+    E({ id: "ex-lemon-myrtle-oil", materialId: "lemon-myrtle", nameZh: "柠檬香桃木精油", nameEn: "Lemon Myrtle Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "叶片水蒸气蒸馏。", aromaProfile: ["柠檬", "甜", "花香", "草本"], chemicalProfile: ["柠檬醛", "香叶醛", "橙花醛", "芳樟醇"], applications: ["柠檬/草本", "清新", "食品香料（食品级）"], safety: "高柠檬醛，皮肤刺激/致敏风险高；不可口服，避免高浓度皮肤接触。", notes: "Backhousia citriodora ≠ 柠檬马鞭草/柠檬香蜂草。" }),
+    E({ id: "ex-blackcurrant-bud-absolute", materialId: "blackcurrant-bud", nameZh: "黑加仑芽原精", nameEn: "Blackcurrant Bud Absolute", extractType: "原精（溶剂萃取）", extractionMethod: "春季芽/嫩叶溶剂浸提。", aromaProfile: ["黑加仑", "青绿", "树脂", "果香", "猫尿边缘"], chemicalProfile: ["硫醇类", "萜烯类", "青叶醛类", "酯类"], applications: ["黑加仑/青绿", "果香", "西普"], safety: "可能含硫化物/溶剂与过敏原；不可直接用于皮肤。", notes: "芽、叶、果提取物不同；硫化物组成差异大。" }),
+    E({ id: "ex-fig-leaf-absolute", materialId: "fig", nameZh: "无花果叶原精", nameEn: "Fig Leaf Absolute", extractType: "原精（溶剂萃取）", extractionMethod: "无花果叶溶剂浸提。", aromaProfile: ["无花果", "青绿", "椰奶", "木质", "微甜"], chemicalProfile: ["内酯类", "青叶醛类", "萜烯类", "呋喃类"], applications: ["无花果/椰奶", "绿意果香", "地中海"], safety: "无花果叶含呋喃香豆素，光敏风险；不可直接用于皮肤。", notes: "叶原精与果提取物/商业无花果重构不同。" }),
+    E({ id: "ex-coconut-co2", materialId: "coconut", nameZh: "椰子 CO₂ 提取物", nameEn: "Coconut CO₂ Extract", extractType: "CO₂ 萃取", extractionMethod: "椰肉/胚乳超临界 CO₂ 萃取。", aromaProfile: ["椰子", "奶油", "甜", "坚果", "微木"], chemicalProfile: ["内酯类", "脂肪酸", "醛类", "酯类"], applications: ["椰奶/奶油", "美食调", "身体护理"], safety: "食品/化妆品级差异大；椰子过敏者谨慎；不可把香精当食品。", notes: "椰子水/椰肉/椰油不同；分馏椰子油是载体。" }),
+    E({ id: "ex-tea-tree-oil", materialId: "tea-tree", nameZh: "茶树精油", nameEn: "Tea Tree Oil", extractType: "精油（水蒸气蒸馏）", extractionMethod: "叶/枝水蒸气蒸馏；需标准化松油烯-4-醇。", aromaProfile: ["药感", "樟脑", "绿叶", "木质", "清新"], chemicalProfile: ["松油烯-4-醇", "γ-萜品烯", "α-松油烯", "1,8-桉叶素"], applications: ["药感/清洁", "草本", "空间香氛"], safety: "可能致敏/刺激；不可口服；婴幼儿避免高浓度。", notes: "Melaleuca alternifolia ≠ 茶叶；抗菌宣传不等于医疗建议。" }),
+    E({ id: "ex-mastic-resinoid", materialId: "mastic", nameZh: "乳香黄连木树脂净油", nameEn: "Mastic Resinoid", extractType: "树脂净油（溶剂提取）", extractionMethod: "乳香黄连木树脂溶剂提取。", aromaProfile: ["树脂", "松木", "柠檬", "辛香", "微苦"], chemicalProfile: ["α-蒎烯", "β-蒎烯", "柠檬烯", "树脂酸"], applications: ["树脂/焚香", "木质", "地中海"], safety: "树脂/精油可能致敏；不可口服（非食品级）。", notes: "Pistacia lentiscus 树脂 ≠ Boswellia 乳香 ≠ galbanum 白松香。" }),
+    E({ id: "ex-tolu-resinoid", materialId: "tolu-balsam", nameZh: "多鲁香脂树脂净油", nameEn: "Tolu Balsam Resinoid", extractType: "树脂净油（溶剂提取）", extractionMethod: "多鲁香脂树脂溶剂提取。", aromaProfile: ["香草", "肉桂", "香脂", "甜", "微烟"], chemicalProfile: ["苯甲酸苄酯", "肉桂酸苄酯", "香草醛", "树脂酸"], applications: ["香草/香脂", "定香", "东方调"], safety: "含致敏成分；不可口服。", notes: "Tolu balsam ≠ Peru balsam；变种/产地不同。" }),
+    E({ id: "ex-treemoss-absolute", materialId: "treemoss", nameZh: "树苔原精", nameEn: "Treemoss Absolute", extractType: "原精（溶剂萃取）", extractionMethod: "地衣体溶剂浸提/净化。", aromaProfile: ["苔藓", "森林", "皮革", "烟熏", "微甜"], chemicalProfile: ["苔黑素", "地衣酸", "醛类", "树脂类"], applications: ["西普/苔藓", "皮革", "森林"], safety: "含致敏地衣酸类；皮肤过敏风险高；不可口服。", notes: "树苔（Pseudevernia furfuracea）≠ 橡木苔（Evernia prunastri）。" }),
+    E({ id: "ex-hops-co2", materialId: "hops", nameZh: "啤酒花 CO₂ 提取物", nameEn: "Hops CO₂ Extract", extractType: "CO₂ 萃取", extractionMethod: "啤酒花球果超临界 CO₂ 萃取。", aromaProfile: ["啤酒花", "青绿", "花香", "柑橘", "苦"], chemicalProfile: ["α-蛇麻烯", "β-石竹烯", "月桂烯", "萜烯醇类"], applications: ["啤酒/草本", "青绿", "木质"], safety: "可能致敏/刺激；不可口服高浓度。", notes: "不同啤酒花品种的萜烯/苦味酸组成差异大。" })
+  );
+})();

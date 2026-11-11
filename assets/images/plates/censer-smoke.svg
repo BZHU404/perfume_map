@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+<title id="title">香炉与烟装饰图</title>
+<desc id="desc">自绘的三足香炉、香篆与上升烟气线稿。器物为通用装饰造型，不是具体历史文物或考古复原图。</desc>
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#D8D0C1" stroke-width=".6" opacity=".5"/></pattern><pattern id="h" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#8A877E" stroke-width=".5" opacity=".35"/></pattern></defs>
+<rect width="760" height="540" fill="#F5F1E8"/><rect x="14" y="14" width="732" height="512" fill="url(#g)" stroke="#26251F"/>
+<rect x="26" y="26" width="708" height="488" fill="none" stroke="#D8D0C1"/>
+<g stroke="#26251F" fill="none" stroke-width="1"><path d="M50 52h38M50 52v38M710 488h-38M710 488v-38"/></g>
+<text x="54" y="48" font-family="Georgia,serif" font-size="8" fill="#60684A" letter-spacing="2">SIMON WORKSHOP / INCENSE PLATE 05</text>
+<text x="706" y="48" text-anchor="end" font-family="ui-monospace,monospace" font-size="7" fill="#8A877E">CENSER · SEAL · SMOKE</text>
+<g transform="translate(330 258)" stroke="#26251F" fill="none">
+ <ellipse cx="0" cy="0" rx="176" ry="44" stroke-width="1.3" fill="#FBF8F1"/>
+ <path d="M-176 0c0 55 78 99 176 99S176 55 176 0" stroke-width="1.3" fill="none"/>
+ <path d="M-176 0c0-24 78-44 176-44s176 20 176 44" stroke="#D8D0C1" stroke-width=".9"/>
+ <path d="M-128 18c0 12 56 22 128 22s128-10 128-22" stroke="#94745A" opacity=".6" stroke-width=".8"/>
+ <path d="M-103 87l-18 52M-68 90l-11 58M70 90l12 58M104 87l18 52" stroke-width="1.5"/>
+ <path d="M-143 148h286" stroke="#8A877E" stroke-width="1"/>
+ <path d="M-72 55c0-20 144-20 144 0" stroke="#B58A54" stroke-width="1"/>
+ <circle cx="-58" cy="73" r="7" fill="#B58A54" opacity=".55" stroke="none"/><circle cx="-36" cy="80" r="5" fill="#94745A" opacity=".5" stroke="none"/>
+</g>
+<g fill="none" stroke="#60684A" stroke-linecap="round">
+ <path d="M286 198c-31-39 24-62-4-103-18-27 18-53 11-84" stroke-width="1.4" opacity=".55"/>
+ <path d="M330 182c-18-35 22-53 4-91-12-25 13-47 22-68" stroke-width="1.2" opacity=".42"/>
+ <path d="M371 192c28-35-15-58 12-91 13-18 0-36-4-54" stroke-width="1.1" opacity=".35"/>
+ <path d="M407 209c-8-26 19-39 8-64" stroke-width=".9" opacity=".3"/>
+</g>
+<g transform="translate(554 190)" stroke="#26251F" fill="none">
+ <circle cx="0" cy="0" r="74" stroke-width="1.1"/>
+ <circle cx="0" cy="0" r="60" stroke="#D8D0C1" stroke-width=".8"/>
+ <path d="M0-54c17 12 28 29 32 45M32 45C22 55 10 60 0 62M0 62c-18-6-33-18-42-32" stroke="#B58A54" stroke-width="1.2"/>
+ <path d="M-42-32C-30-46-16-54 0-54" stroke="#8A877E" stroke-width=".7"/>
+ <text x="0" y="4" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#60684A" stroke="none">香篆</text>
+ <text x="0" y="18" text-anchor="middle" font-family="ui-monospace,monospace" font-size="5" fill="#8A877E" stroke="none">INCENSE SEAL</text>
+</g>
+<g transform="translate(90 380)" stroke="#94745A" fill="none">
+ <path d="M0 0h118v72H0Z" stroke-width="1"/><path d="M12 14h94M12 28h70M12 42h88M12 56h52" stroke="#8A877E" stroke-width=".7"/>
+ <text x="12" y="68" font-family="ui-monospace,monospace" font-size="5" fill="#8A877E" stroke="none">FORM / MATERIAL / CONTEXT</text>
+</g>
+<g font-family="ui-monospace,monospace" font-size="6" fill="#8A877E" letter-spacing="1">
+ <text x="250" y="452">01 / VESSEL</text><text x="351" y="452">02 / HEAT</text><text x="454" y="452">03 / SMOKE</text><text x="556" y="452">04 / MEMORY</text>
+</g>
+<text x="54" y="498" font-family="Georgia,serif" font-size="9" fill="#26251F" letter-spacing="2">FIRE · RESIN · VESSEL · AIR</text>
+<text x="706" y="498" text-anchor="end" font-family="ui-monospace,monospace" font-size="6.5" fill="#8A877E">GENERIC VESSEL — NOT AN ARCHAEOLOGICAL RECONSTRUCTION</text>
+<rect x="30" y="30" width="700" height="480" fill="url(#h)" opacity=".12" pointer-events="none"/>
+</svg>

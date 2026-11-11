@@ -1,0 +1,254 @@
+/* ==========================================================================
+   Scent Map · LUXURY LAYER
+   本地托管的 GSAP / ScrollTrigger / Lenis。无库时自动降级。
+   ========================================================================== */
+
+html.lux-js { --lux-gold: #b58a54; --lux-gold-soft: rgba(181, 138, 84, .38); }
+
+html.lenis,
+html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* fixed gold frame */
+.lux-frame {
+  position: fixed;
+  inset: 9px;
+  z-index: 61;
+  pointer-events: none;
+  border: 1px solid rgba(181, 138, 84, .16);
+  opacity: 0;
+  transition: opacity 1.2s ease .4s;
+}
+.lux-js .lux-frame { opacity: 1; }
+.lux-frame::before,
+.lux-frame::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: rgba(181, 138, 84, .54);
+  border-style: solid;
+}
+.lux-frame::before { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
+.lux-frame::after { right: -1px; bottom: -1px; border-width: 0 1px 1px 0; }
+.lux-frame .lf-mark {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  writing-mode: vertical-rl;
+  font-family: var(--mono);
+  font-size: 6px;
+  letter-spacing: .28em;
+  color: rgba(181, 138, 84, .58);
+}
+
+/* scroll progress */
+.lux-progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 150;
+  width: 100%;
+  height: 2px;
+  pointer-events: none;
+  background: rgba(216, 208, 193, .28);
+}
+.lux-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(181, 138, 84, .2), #b58a54 45%, #60684a 78%, #354b3c);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  box-shadow: 0 0 12px rgba(181, 138, 84, .38);
+}
+
+/* gold dust */
+.lux-particles {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: .42;
+  mix-blend-mode: multiply;
+  transition: opacity .8s ease;
+}
+body.lux-preloading .lux-particles { opacity: 0; }
+
+/* subtle pointer-follow sheen (no custom cursor) */
+.lux-js .specimen-card,
+.lux-js .family-card,
+.lux-js .brand-index-card,
+.lux-js .chapter-card {
+  background-image: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(181, 138, 84, .105), transparent 68%);
+  background-repeat: no-repeat;
+}
+.lux-js .specimen-card:hover { transform: none; }
+.lux-js .specimen-card,
+.lux-js .family-card,
+.lux-js .brand-index-card,
+.lux-js .chapter-card,
+.lux-js .plate-figure { transform-style: preserve-3d; }
+
+/* header compact state */
+.site-header.is-scrolled { background: rgba(245, 241, 232, .965); box-shadow: 0 9px 30px rgba(38, 37, 31, .045); }
+.site-header.is-scrolled .topline { padding-top: 9px; padding-bottom: 9px; }
+.site-header.is-scrolled .brand-mark { width: 38px; height: 38px; }
+.site-header.is-scrolled .brand-type strong { font-size: 15px; }
+.site-header.is-scrolled .primary-nav a { padding-top: 9px; padding-bottom: 8px; }
+.site-header .topline,
+.site-header .brand-mark,
+.site-header .brand-type strong,
+.site-header .primary-nav a { transition: padding .45s var(--ease), width .45s var(--ease), height .45s var(--ease), font-size .45s var(--ease), background .45s; }
+
+/* preloader */
+.lux-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 30000;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  color: var(--ink);
+  overflow: hidden;
+  isolation: isolate;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+.lux-preloader::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(181, 138, 84, .28);
+}
+.lux-preloader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 49.95%, rgba(181, 138, 84, .09) 50%, transparent 50.05%),
+    linear-gradient(transparent 49.95%, rgba(181, 138, 84, .09) 50%, transparent 50.05%);
+  pointer-events: none;
+}
+.lp-inner { position: relative; z-index: 1; width: min(76vw, 440px); text-align: center; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.lp-kicker { font-family: var(--mono); font-size: 8px; letter-spacing: .32em; color: var(--olive); }
+.lp-mark {
+  font-family: var(--serif);
+  font-size: clamp(56px, 12vw, 116px);
+  line-height: .95;
+  letter-spacing: -.06em;
+  margin: 22px 0 24px;
+}
+.lp-mark em { font-style: normal; color: transparent; -webkit-text-stroke: 1px var(--green); }
+.lp-line { height: 1px; width: 100%; background: var(--line); overflow: hidden; }
+.lp-line i { display: block; width: 100%; height: 100%; background: linear-gradient(90deg, var(--amber), var(--green)); transform: scaleX(0); transform-origin: 0 50%; }
+.lp-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: .14em;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+body.lux-preloading { overflow: hidden; }
+
+/* page content entrance + drawer */
+.lux-js .page-head h1,
+.lux-js .hero h1 { text-wrap: balance; }
+.lux-js .detail-drawer.is-open .drawer-head { animation: luxFadeDown .55s var(--ease) both; }
+.lux-js .detail-drawer.is-open .drawer-eyebrow,
+.lux-js .detail-drawer.is-open .drawer-title,
+.lux-js .detail-drawer.is-open .drawer-latin,
+.lux-js .detail-drawer.is-open .drawer-sub-en,
+.lux-js .detail-drawer.is-open .drawer-tagline { animation: luxDrawerIn .75s var(--ease) both; }
+.lux-js .detail-drawer.is-open .drawer-title { animation-delay: .06s; }
+.lux-js .detail-drawer.is-open .drawer-tagline { animation-delay: .12s; }
+@keyframes luxFadeDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+@keyframes luxDrawerIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+/* gold utility */
+.lux-gold { color: var(--amber); }
+.lux-js .section-head h2 em,
+.lux-js .manifesto .manifesto-lead em { text-shadow: 0 0 26px rgba(181, 138, 84, .12); }
+.lux-js .btn.primary { position: relative; overflow: hidden; }
+.lux-js .btn.primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 20%, rgba(251, 248, 241, .18) 46%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform .85s var(--ease);
+}
+.lux-js .btn.primary:hover::before { transform: translateX(120%); }
+.lux-js .btn.primary > * { position: relative; z-index: 1; }
+
+/* make sure hidden JS layers never block printing */
+@media print {
+  .lux-frame, .lux-progress, .lux-particles, .lux-preloader { display: none !important; }
+}
+
+@media (max-width: 780px) {
+  .lux-frame { inset: 5px; }
+  .lux-progress { height: 2px; }
+  .lux-particles { opacity: .28; }
+  .lux-js .specimen-card,
+  .lux-js .family-card,
+  .lux-js .brand-index-card,
+  .lux-js .chapter-card { background-image: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lux-frame, .lux-progress, .lux-particles { display: none !important; }
+  .lux-preloader { display: none !important; }
+  .lux-js .detail-drawer.is-open .drawer-head,
+  .lux-js .detail-drawer.is-open .drawer-title,
+  .lux-js .detail-drawer.is-open .drawer-tagline,
+  .lux-js .detail-drawer.is-open .drawer-eyebrow,
+  .lux-js .detail-drawer.is-open .drawer-latin,
+  .lux-js .detail-drawer.is-open .drawer-sub-en { animation: none; }
+}
+
+
+/* Safari: prioritize compositor stability over effect density. */
+html.lux-safari { scroll-behavior: auto; }
+html.lux-safari .lux-particles {
+  mix-blend-mode: normal;
+  opacity: .22;
+}
+html.lux-safari body.lux-preloading .lux-particles { opacity: 0; }
+html.lux-safari .site-header {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: rgba(245, 241, 232, .985);
+}
+html.lux-safari .lux-preloader {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+/* Native cross-document page transitions — no delayed location redirect. */
+@view-transition { navigation: auto; }
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .48s;
+  animation-timing-function: cubic-bezier(.22, .61, .36, 1);
+  animation-fill-mode: both;
+}
+::view-transition-old(root) { animation-name: luxPageOld; }
+::view-transition-new(root) { animation-name: luxPageNew; }
+@keyframes luxPageOld { from { opacity: 1; } to { opacity: 0; } }
+@keyframes luxPageNew { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) { animation: none !important; }
+}

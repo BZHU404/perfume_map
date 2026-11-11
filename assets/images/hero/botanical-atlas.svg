@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 920" role="img" aria-labelledby="title desc">
+  <title id="title">香谱植物标本馆装饰插画</title>
+  <desc id="desc">手绘风格的玫瑰枝叶、种子、化学六元环与档案测量线组成的装饰性植物图谱。不是植物照片，也不表示真实化学结构。</desc>
+  <defs>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(36)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#8A877E" stroke-width=".55" opacity=".28"/>
+    </pattern>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" fill="none" stroke="#D8D0C1" stroke-width=".65" opacity=".52"/>
+    </pattern>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale=".7"/></filter>
+  </defs>
+  <rect width="760" height="920" fill="#F5F1E8"/>
+  <rect x="16" y="16" width="728" height="888" fill="url(#grid)" stroke="#26251F" stroke-width="1.1"/>
+  <rect x="28" y="28" width="704" height="864" fill="none" stroke="#D8D0C1" stroke-width="1"/>
+  <g stroke="#26251F" stroke-width="1.1" fill="none" opacity=".8">
+    <path d="M52 58h58M52 58v58M708 58h-58M708 58v58M52 862h58M52 862v-58M708 862h-58M708 862v-58"/>
+    <circle cx="380" cy="448" r="302" stroke="#D8D0C1"/>
+    <circle cx="380" cy="448" r="287" stroke="#8A877E" stroke-dasharray="1 8" opacity=".75"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#60684A">
+    <text x="62" y="90" font-size="11" letter-spacing="3">SIMON WORKSHOP</text>
+    <text x="62" y="108" font-size="9" letter-spacing="2" fill="#8A877E">SCENT MAP · PLATE I</text>
+    <text x="698" y="90" font-size="10" text-anchor="end" letter-spacing="2">FOLIO 01</text>
+    <text x="698" y="108" font-size="9" text-anchor="end" fill="#8A877E">35.68° N / 139.69° E</text>
+  </g>
+  <g opacity=".34" fill="none" stroke="#94745A" stroke-width=".8">
+    <path d="M100 734C196 686 242 610 276 520S340 344 474 280"/>
+    <path d="M108 742C220 704 298 632 328 548"/>
+    <path d="M140 708l-28-40M178 680l-36-48M216 646l-24-56M254 602l-6-62M286 548l14-58M316 486l24-48M348 420l38-36M390 368l44-28"/>
+    <path d="M112 736l-42 12M148 708l-44 24M190 674l-46 34M230 632l-50 38M270 584l-54 36M306 530l-56 28M340 466l-54 18M372 404l-48 6"/>
+  </g>
+  <g stroke="#354B3C" fill="none" stroke-linecap="round">
+    <path d="M380 718C367 638 397 559 382 476 370 411 342 365 343 302" stroke-width="2.4"/>
+    <path d="M381 603c-49-4-86-42-100-72-22-49 4-91 47-91 46 0 73 47 55 94-12 31-33 52-47 69" stroke-width="1.5" opacity=".68"/>
+    <path d="M382 476c-17-30-5-66 18-78 31-16 67 8 63 41-4 38-45 58-81 37" stroke-width="1.5" opacity=".68"/>
+    <path d="M344 302c-20-32-4-67 24-70 27-3 45 29 32 54-10 19-35 32-56 16" stroke-width="1.3" opacity=".5"/>
+  </g>
+  <g fill="#354B3C" opacity=".88">
+    <path d="M369 640c-37 6-60-18-72-41 29-7 54 3 72 41Z"/>
+    <path d="M391 572c36 1 59-22 68-48-29-2-56 12-68 48Z" opacity=".72"/>
+    <path d="M361 522c-33-4-51-27-56-49 24-2 47 11 56 49Z" opacity=".8"/>
+    <path d="M396 430c34-9 49-34 48-57-25 2-46 19-48 57Z" opacity=".66"/>
+    <path d="M361 370c-26-15-36-40-30-59 21 5 36 25 30 59Z" opacity=".72"/>
+  </g>
+  <g fill="none" stroke="#94745A" stroke-width="1.2">
+    <path d="M347 299c-3-38 21-57 34-59 17 23 11 52-34 59Z" fill="#60684A" opacity=".4"/>
+    <path d="M376 357c13-24 37-31 54-25-2 25-21 43-54 25Z" fill="#60684A" opacity=".3"/>
+  </g>
+  <g transform="translate(518 590)" stroke="#26251F" fill="none" stroke-width="1.05">
+    <path d="M0-49 43-24v49L0 49-43 24v-49Z"/>
+    <path d="M0-49v49M43-24 0 0M-43-24 0 0M0 0v49" opacity=".5"/>
+    <circle cx="0" cy="0" r="7" fill="#B58A54" stroke="none"/>
+    <path d="M43-24h46M-43 24h-83" stroke-dasharray="2 5" opacity=".7"/>
+    <text x="98" y="-20" font-family="Georgia, serif" font-size="9" fill="#60684A" stroke="none" letter-spacing="1.5">MOLECULE</text>
+    <text x="98" y="-8" font-family="ui-monospace, monospace" font-size="7" fill="#8A877E" stroke="none">C₁₀H₁₆</text>
+  </g>
+  <g fill="#26251F" font-family="Georgia, 'Times New Roman', serif" opacity=".82">
+    <text x="78" y="782" font-size="9" letter-spacing="2.5">ROSA × DAMASCENA</text>
+    <text x="78" y="797" font-size="7.5" fill="#8A877E" letter-spacing="1.2">PETAL / HONEY / SPICE / WAX</text>
+    <text x="78" y="826" font-size="8" fill="#60684A">天然原料 ≠ 提取物 ≠ 分子</text>
+  </g>
+  <g stroke="#26251F" stroke-width="1" font-family="ui-monospace, monospace" font-size="7" fill="#26251F">
+    <path d="M272 302h-84v-37"/>
+    <circle cx="272" cy="302" r="2.6"/>
+    <text x="146" y="259" letter-spacing="1">CALYX / 03</text>
+    <path d="M382 622h98v54"/>
+    <circle cx="382" cy="622" r="2.6"/>
+    <text x="450" y="692" letter-spacing="1">HARVEST / DAWN</text>
+    <path d="M518 541V480h74"/>
+    <circle cx="518" cy="541" r="2.6"/>
+    <text x="566" y="472" letter-spacing="1">AROMA</text>
+  </g>
+  <g opacity=".55" fill="#B58A54">
+    <circle cx="161" cy="174" r="2"/><circle cx="635" cy="264" r="1.6"/><circle cx="653" cy="730" r="2"/><circle cx="92" cy="478" r="1.5"/>
+  </g>
+  <text x="380" y="856" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8A877E" letter-spacing="3">A FIELD ATLAS OF SCENT · 气味图鉴</text>
+  <rect x="32" y="32" width="696" height="856" fill="url(#hatch)" opacity=".16" pointer-events="none"/>
+</svg>

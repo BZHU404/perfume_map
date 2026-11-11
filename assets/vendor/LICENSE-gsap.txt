@@ -1,0 +1,9 @@
+GSAP 3.12.5
+Copyright 2024, GreenSock, Inc. https://gsap.com
+
+GSAP is distributed under the GSAP Standard "No Charge" License for websites
+and digital products. Review the current terms before redistribution:
+https://gsap.com/standard-license/
+
+ScrollTrigger is included in the GSAP package and is used under the same terms.
+Source: https://cdn.jsdelivr.net/npm/gsap@3.12.5/

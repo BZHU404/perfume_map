@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+<title id="title">调香风琴装饰图</title>
+<desc id="desc">自绘的调香师工作台与“调香风琴”瓶架，配闻香纸和金字塔示意图。它是通用装饰图，不是任何真实调香室或产品的照片。</desc>
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#D8D0C1" stroke-width=".6" opacity=".5"/></pattern><pattern id="h" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#8A877E" stroke-width=".5" opacity=".35"/></pattern></defs>
+<rect width="760" height="540" fill="#F5F1E8"/><rect x="14" y="14" width="732" height="512" fill="url(#g)" stroke="#26251F"/>
+<rect x="26" y="26" width="708" height="488" fill="none" stroke="#D8D0C1"/>
+<g stroke="#26251F" fill="none" stroke-width="1"><path d="M50 52h38M50 52v38M710 488h-38M710 488v-38"/></g>
+<text x="54" y="48" font-family="Georgia,serif" font-size="8" fill="#60684A" letter-spacing="2">SIMON WORKSHOP / PERFUMERY PLATE 03</text>
+<text x="706" y="48" text-anchor="end" font-family="ui-monospace,monospace" font-size="7" fill="#8A877E">THE ORGAN · GENERIC ILLUSTRATION</text>
+<g transform="translate(92 96)" stroke="#26251F" fill="none" stroke-width="1.2">
+ <path d="M0 36h404v292H0Z"/><path d="M0 330h404M24 36v294M380 36v294"/>
+ <path d="M24 76h356M24 116h356M24 156h356M24 196h356M24 236h356M24 276h356" stroke="#8A877E" stroke-width=".7"/>
+ <path d="M24 292h356" stroke-width="1"/>
+ <g stroke="#354B3C" fill="#FBF8F1">
+  <path d="M45 60h20v22H45Z"/><path d="M88 60h20v22H88Z"/><path d="M131 60h20v22h-20Z"/><path d="M174 60h20v22h-20Z"/><path d="M217 60h20v22h-20Z"/><path d="M260 60h20v22h-20Z"/><path d="M303 60h20v22h-20Z"/><path d="M346 60h20v22h-20Z"/>
+ </g>
+ <g stroke="#94745A" fill="#FBF8F1">
+  <path d="M45 100h20v22H45Z"/><path d="M88 100h20v22H88Z"/><path d="M131 100h20v22h-20Z"/><path d="M174 100h20v22h-20Z"/><path d="M217 100h20v22h-20Z"/><path d="M260 100h20v22h-20Z"/><path d="M303 100h20v22h-20Z"/><path d="M346 100h20v22h-20Z"/>
+ </g>
+ <g stroke="#60684A" fill="#FBF8F1">
+  <path d="M45 140h20v22H45Z"/><path d="M88 140h20v22H88Z"/><path d="M131 140h20v22h-20Z"/><path d="M174 140h20v22h-20Z"/><path d="M217 140h20v22h-20Z"/><path d="M260 140h20v22h-20Z"/><path d="M303 140h20v22h-20Z"/><path d="M346 140h20v22h-20Z"/>
+ </g>
+ <g stroke="#26251F" fill="#FBF8F1">
+  <path d="M45 180h20v22H45Z"/><path d="M88 180h20v22H88Z"/><path d="M131 180h20v22h-20Z"/><path d="M174 180h20v22h-20Z"/><path d="M217 180h20v22h-20Z"/><path d="M260 180h20v22h-20Z"/><path d="M303 180h20v22h-20Z"/><path d="M346 180h20v22h-20Z"/>
+ </g>
+ <g stroke="#354B3C" fill="none"><path d="M45 220h20v52H45Z"/><path d="M88 220h20v52H88Z"/><path d="M131 220h20v52h-20Z"/><path d="M174 220h20v52h-20Z"/><path d="M217 220h20v52h-20Z"/><path d="M260 220h20v52h-20Z"/><path d="M303 220h20v52h-20Z"/><path d="M346 220h20v52h-20Z"/></g>
+</g>
+<g transform="translate(535 126)" stroke="#94745A" fill="none">
+ <path d="M0 0h126v86H0Z" stroke-width="1.1"/><path d="M14 16h98M14 30h72M14 44h86M14 58h61" stroke="#8A877E" stroke-width=".8"/>
+ <path d="M14 74h84" stroke="#B58A54" stroke-width="2"/><text x="14" y="82" font-family="ui-monospace,monospace" font-size="5.5" fill="#8A877E" stroke="none" letter-spacing="1">SMELLING STRIPS</text>
+</g>
+<g transform="translate(556 280)" stroke="#26251F" fill="none" stroke-width="1">
+ <path d="M58 0 105 144H11Z"/><path d="M35 62h46M25 104h66M18 132h80" stroke="#8A877E" stroke-width=".8"/>
+ <text x="30" y="54" font-family="ui-monospace,monospace" font-size="5.5" fill="#8A877E" stroke="none">TOP</text><text x="25" y="96" font-family="ui-monospace,monospace" font-size="5.5" fill="#8A877E" stroke="none">HEART</text><text x="19" y="126" font-family="ui-monospace,monospace" font-size="5.5" fill="#8A877E" stroke="none">BASE</text>
+</g>
+<g transform="translate(526 430)" stroke="#354B3C" fill="none">
+ <path d="M0 0h146"/><path d="M12 0l14 28M45 0l14 28M78 0l14 28M111 0l14 28" stroke-width=".8" opacity=".7"/>
+</g>
+<text x="54" y="498" font-family="Georgia,serif" font-size="9" fill="#26251F" letter-spacing="2">BOTTLES · STRIPS · ACCORD · MEMORY</text>
+<text x="706" y="498" text-anchor="end" font-family="ui-monospace,monospace" font-size="6.5" fill="#8A877E">NOT A REAL ORGAN OR PRODUCT PHOTO</text>
+<rect x="30" y="30" width="700" height="480" fill="url(#h)" opacity=".12" pointer-events="none"/>
+</svg>
