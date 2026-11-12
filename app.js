@@ -1599,7 +1599,7 @@
      ======================================================================== */
   function initPrefetch() {
     if (!/^https?:$/.test(location.protocol)) return;
-    const pages = ['index.html', 'natural.html', 'molecules.html', 'perfumery.html', 'perfume.html', 'incense.html', 'safety.html'];
+    const pages = ['index.html', 'natural.html', 'molecules.html', 'perfumery.html', 'perfume.html', 'incense.html', 'safety.html', 'workshop.html'];
     const current = location.pathname.split('/').pop() || 'index.html';
     const run = () => pages.filter((p) => p !== current).forEach((href) => {
       const link = document.createElement('link');

@@ -19,6 +19,7 @@
 ├── perfume.html            香水作品档案 / 品牌索引
 ├── incense.html            熏香与传统香文化
 ├── safety.html             安全、法规与使用规范
+├── workshop.html           调香工坊 / 家用提取 / 10mL 配方 / 气味设计
 ├── styles.css              共享视觉系统与响应式样式
 ├── app.js                  共享交互、检索、抽屉、轮盘、比较、收藏等
 ├── luxury.css              奢华视觉层样式
@@ -37,7 +38,7 @@
 │   ├── molecules-extra3.js 龙脑 / 二氢茉莉酮补遗
 │   ├── ingredients.js      商品原料（基础）
 │   ├── ingredients-extra.js Cetalox / Muscenone 商品记录
-│   ├── ingredients-extra2.js 商品基料 19 条 + 辅助材料 11 条
+│   ├── ingredients-extra2.js 商品基料 19 条 + 辅助材料 13 条
 │   ├── families.js         15 个主香调与子香调
 │   ├── accords.js          12 个经典和弦
 │   ├── brands.js           品牌（与作品分开）
@@ -111,11 +112,11 @@ http://localhost:8000/
 ## 4. GitHub Pages 部署
 
 1. 将本目录全部文件提交到 GitHub 仓库（保持 `index.html` 在仓库根目录）。
-2. 在仓库 **Settings → Pages** 中选择：
-   - Source: `Deploy from a branch`
-   - Branch: `main`（或实际分支）
-   - Folder: `/ (root)`
-3. 保存后等待 GitHub Pages 构建；地址通常为：
+2. 仓库已包含 `.github/workflows/static.yml`：推送到 `main` 后会自动构建/部署。
+3. 在 **Settings → Pages → Build and deployment** 中：
+   - 若使用当前 workflow：Source 选择 **GitHub Actions**；
+   - 若不用 Actions：Source 选择 **Deploy from a branch**，Branch `main`，Folder `/ (root)`。
+4. 等待 Actions 完成；地址通常为：
    `https://<用户名>.github.io/<仓库名>/`
 4. 所有链接均为相对路径，可部署在仓库根路径或项目子路径下，无需修改。
 
@@ -127,6 +128,7 @@ http://localhost:8000/
 - **键盘**：`/` 聚焦搜索，`Esc` 关闭搜索/详情/弹窗或移动端导航，`↑/↓` 在搜索结果中移动，`Enter` 打开。
 - **深链接**：`natural.html#rose-damascena`、`molecules.html#vanillin`、`perfume.html#shalimar` 等；打开页面时自动打开详情抽屉。
 - **共享详情抽屉**：原料、提取物、分子、商品原料、香调、和弦、香水、香文化、两类知识条目共用。
+- **调香工坊**：独立的 `workshop.html`，讲酒精酊剂、油脂浸提/脂吸法的区别，给出玫瑰/薰衣草 10mL 香水配方、DIY 气味记录卡与安全边界。
 - **页面内筛选**：原料分类、分子化学类别、香水品牌/调香师/年代/年份/浓度、香文化地区、安全分类。
 - **原料比较**：2–3 种原料并排比较；缺失项明确显示未录入，不做推测。
 - **香调轮盘**：15 个主香调扇区可点击；子香调可点击；代表原料/分子可进入详情。
@@ -157,7 +159,7 @@ http://localhost:8000/
 
 ## 7. 测试记录（实际执行）
 
-使用 **Microsoft Edge 1440×1000 / 1440×1100 与 390×844 headless（CDP）** 对七个页面进行了：
+使用 **Microsoft Edge 1440×1000 / 1440×1100 与 390×844 headless（CDP）** 对八个页面进行了：
 
 - 页面加载与控制台错误检查（无 JS 异常）；
 - 桌面/移动端布局与横向溢出检查（`document.documentElement.scrollWidth = 390`）；
@@ -172,6 +174,7 @@ http://localhost:8000/
 - 移动端菜单开合；
 - `file://` 双击路径与本地静态服务器路径；
 - 数据库扩充后复测：85 原料卡、60 提取物、162 分子、20 特殊/加工香料卡、41 商品/辅助原料；桌面与 390px 均无横向溢出；
+- 调香工坊在 1440px / 390px 下检查了 8 项导航、配方表内部滚动与三栏/单栏切换。
 - 奢华动效层：首次序章、浏览器原生 View Transition、滚动显现、轮盘入场、漂浮金色微粒、卡片倾斜、磁吸按钮与本地 GSAP/Lenis 加载；无自定义光标。
 - `prefers-reduced-motion: reduce` 下自动关闭重效果并保持内容可见；
 - 使用 Safari UA 模拟验证了 Safari 降级分支（原生滚动、无 Lenis、无二次入场）；真实 Safari 渲染仍需在设备上最终确认；
