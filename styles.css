@@ -2531,3 +2531,25 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; appe
 }
 .extract-card .card-top { margin-bottom: 16px; }
 .extract-card .card-en { color: var(--brown); font-family: var(--mono); font-style: normal; font-size: 8.5px; letter-spacing: .04em; }
+
+/* image logo */
+.brand-mark--image {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  overflow: visible;
+}
+.brand-mark--image::before,
+.brand-mark--image::after { content: none; }
+.brand-mark--image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer-brand .brand-mark.brand-mark--image {
+  border: 0;
+  border-radius: 50%;
+  background: var(--paper);
+  padding: 3px;
+}
