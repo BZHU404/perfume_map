@@ -98,6 +98,7 @@ body.lux-preloading .lux-particles { opacity: 0; }
 .site-header.is-scrolled { background: rgba(245, 241, 232, .965); box-shadow: 0 9px 30px rgba(38, 37, 31, .045); }
 .site-header.is-scrolled .topline { padding-top: 9px; padding-bottom: 9px; }
 .site-header.is-scrolled .brand-mark { width: 38px; height: 38px; }
+.site-header.is-scrolled .brand-mark--image { width: 48px; height: 48px; min-width: 48px; min-height: 48px; }
 .site-header.is-scrolled .brand-type strong { font-size: 15px; }
 .site-header.is-scrolled .primary-nav a { padding-top: 9px; padding-bottom: 8px; }
 .site-header .topline,
